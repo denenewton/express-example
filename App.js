@@ -1,6 +1,6 @@
 import express, { json, urlencoded } from 'express'
-import photoRouter from '../routers/photoRouter.js'
-import yourName from '../routers/yourName.js'
+import photoRouter from './routers/photoRouter.js'
+import yourName from './routers/yourName.js'
 
 class App {
   constructor() {
