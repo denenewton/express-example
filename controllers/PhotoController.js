@@ -21,7 +21,7 @@ class PhotoController {
         path,
       })
 
-      return res.status(200).json(_photo)
+      return res.status(200).json(req.file)
     })
   }
 }
