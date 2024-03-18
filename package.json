@@ -5,7 +5,7 @@
 	"main": "index.ts",
 	"type": "module",
 	"scripts": {
-		"start": "nodemon api/index.js"
+		"start": "node api/index.js"
 	},
 	"keywords": [],
 	"author": "Daniel dos Santos Araujo",
