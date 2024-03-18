@@ -1,11 +1,10 @@
+import dotenv from 'dotenv'
+dotenv.config()
+import '../database/mongoConnection.js'
 import { log } from 'console'
-import express from 'express'
-import yourName from '../routers/yourName.js'
-const app = express()
+import app from './App.js'
 
-app.use('/get-your-name', yourName)
 
 const port = process.env.PORT || 3000
 
-
-app.listen(port,()=> log('Express is running on http://localhost:'+ port))
+app.listen(port, () => log('Express is running on http://localhost:' + port))
