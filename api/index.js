@@ -1,5 +1,3 @@
-import dotenv from 'dotenv'
-dotenv.config()
 import '../database/mongoConnection.js'
 import { log } from 'console'
 import app from './App.js'
