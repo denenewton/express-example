@@ -14,7 +14,7 @@ class App {
   middlewares() {
     this.app.use(urlencoded({ extended: true }))
     this.app.use(json())
-    this.app.use(express.static(join('__dirname', 'public')));
+    this.app.use(express.static(join(import.meta.dirname, 'public')));
   }
 
   routes() {
