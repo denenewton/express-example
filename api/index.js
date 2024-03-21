@@ -1,4 +1,4 @@
-import './database/mongoConnection.js'
+import '../database/mongoConnection.js'
 import { log } from 'console'
 import app from './App.js'
 

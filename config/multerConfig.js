@@ -15,7 +15,7 @@ export default {
   },
   storage: multer.diskStorage({
     destination: (req, file, cb) => {
-      cb(null, path.join('__dirname', '..', 'public', 'images'))
+      cb(null, path.resolve(import.meta.dirname, '..', 'public', 'img'))
     },
     filename: (req, file, cb) => {
       cb(null, `${Date.now()}_${aleatorio()}${path.extname(file.originalname)}`)
