@@ -1,7 +1,7 @@
 import Photo from "../models/Photo.js";
 
 
-class HomeController {
+class ImagesController {
   async index(req, res) {
     try {
       const imagens = await Photo.find().sort('originalname')
@@ -15,4 +15,4 @@ class HomeController {
   }
 }
 
-export default new HomeController()
+export default new ImagesController()

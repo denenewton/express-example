@@ -1,6 +1,6 @@
 import express, { json, urlencoded } from 'express'
 import photoRouter from '../routers/photoRouter.js'
-import homeRouter from '../routers/homeRouter.js'
+import imageRouter from '../routers/imageRouter.js'
 import yourName from '../routers/yourName.js'
 import { resolve } from 'path'
 
@@ -19,7 +19,7 @@ class App {
   }
 
   routes() {
-    this.app.use('/imagens', homeRouter)
+    this.app.use('/images', imageRouter)
     this.app.use('/photos', photoRouter)
     this.app.use('/get-your-name', yourName)
   }
