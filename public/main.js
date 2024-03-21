@@ -8,7 +8,7 @@ fetch('/imagens').
 
     gallery.innerHTML += imagens.map(el => `
       <div class="image">
-        <img src="img/${el.filename}" alt="Descrição da imagem">
+        <img src="/img/${el.filename}" alt="${el.originalname}">
       </div>
     `).join('')
 
