@@ -13,12 +13,12 @@ class PhotoController {
         })
       }
       const { filename, originalname, path, mimetype } = req.file
-
+      const url = `https://express-example-gules.vercel.app/img/${filename}`
       const _photo = await Photo.create({
         originalname,
         filename,
         mimetype,
-        path,
+        url,
       })
 
       return res.status(200).json(_photo)
