@@ -1,2 +1,15 @@
 
-fetch('/home').then(resp => resp.json()).then(resp => console.log(resp))
+fetch('/imagens').
+  then(resp => resp.json()).
+  then(resp => {
+    const imagens = resp
+
+    let gallery = document.querySelector('.gallery')
+
+    gallery.innerHTML += imagens.map(el => `
+      <div class="image">
+        <img src="img/${el.filename}" alt="Descrição da imagem">
+      </div>
+    `).join('')
+
+  })

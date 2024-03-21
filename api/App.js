@@ -19,7 +19,7 @@ class App {
   }
 
   routes() {
-    this.app.use('/home', homeRouter)
+    this.app.use('/imagens', homeRouter)
     this.app.use('/photos', photoRouter)
     this.app.use('/get-your-name', yourName)
   }
