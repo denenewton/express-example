@@ -1,5 +1,5 @@
 
-fetch('/imagens').
+fetch('/images').
   then(resp => resp.json()).
   then(resp => {
     const imagens = resp
